@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Process from '../components/Process';
 import Stats from '../components/Stats';
+import Dashboard from '../components/Dashboard';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
       <Hero />
       <Services />
       <Process />
+      <Dashboard />
       <Stats />
       <Testimonials />
       <Contact />

@@ -2,61 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Process: React.FC = () => {
-  const steps = [
-    {
-      id: 1,
-      title: "Remplir le formulaire",
-      description: "Détaillez votre projet énergétique en quelques clics",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
-        </svg>
-      )
-    },
-    {
-      id: 2,
-      title: "Analyse & Vérification",
-      description: "Notre système qualifie votre demande pour garantir la pertinence",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-          <path d="M14 2v6h6" />
-          <path d="M16 13H8" />
-          <path d="M16 17H8" />
-          <path d="M10 9H8" />
-        </svg>
-      )
-    },
-    {
-      id: 3,
-      title: "Mise en relation",
-      description: "Connexion avec des professionnels qualifiés près de chez vous",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-          <circle cx="8.5" cy="7" r="4" />
-          <line x1="20" y1="8" x2="20" y2="14" />
-          <line x1="23" y1="11" x2="17" y2="11" />
-        </svg>
-      )
-    },
-    {
-      id: 4,
-      title: "Évaluation & Devis",
-      description: "Recevez des devis personnalisés pour votre projet",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="4" width="20" height="16" rx="2" />
-          <path d="M7 15h0M7 11h0" />
-          <path d="M11.5 15h0M11.5 11h0" />
-          <path d="M16 15h0M16 11h0" />
-          <path d="M2 9h20" />
-        </svg>
-      )
-    }
-  ];
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -70,19 +15,7 @@ const Process: React.FC = () => {
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
@@ -90,18 +23,54 @@ const Process: React.FC = () => {
         duration: 0.5,
         ease: "easeOut"
       }
-    },
-    hover: {
-      y: -10,
-      boxShadow: "0px 15px 30px rgba(0, 0, 0, 0.1)",
-      transition: {
-        duration: 0.3
-      }
     }
   };
 
+  const steps = [
+    {
+      id: 1,
+      title: "Définissez votre projet",
+      description: "Précisez vos besoins en matière de transition énergétique : panneaux solaires, isolation thermique ou pompe à chaleur.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+        </svg>
+      )
+    },
+    {
+      id: 2,
+      title: "Recevez des devis personnalisés",
+      description: "Nos partenaires qualifiés étudient votre demande et vous proposent des solutions adaptées à votre situation.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      )
+    },
+    {
+      id: 3,
+      title: "Comparez les offres",
+      description: "Analysez les différentes propositions et choisissez celle qui correspond le mieux à vos attentes et à votre budget.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+        </svg>
+      )
+    },
+    {
+      id: 4,
+      title: "Concrétisez votre projet",
+      description: "Lancez votre projet de transition énergétique avec le professionnel sélectionné et bénéficiez d'un suivi personnalisé.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      )
+    }
+  ];
+
   return (
-    <section id="process" className="py-20 bg-gray-50">
+    <section id="process" className="py-20 bg-gradient-to-br from-[#f8fafc] to-[#e0f2fe]">
       <div className="container mx-auto px-6">
         <motion.div
           className="text-center mb-16"
@@ -114,75 +83,102 @@ const Process: React.FC = () => {
             className="text-[#007BFF] font-semibold text-lg"
             variants={itemVariants}
           >
-            Notre processus
+            Comment ça marche
           </motion.span>
           <motion.h2 
             className="text-4xl font-bold mt-2 mb-4 text-gray-900"
             variants={itemVariants}
           >
-            Comment ça fonctionne
+            Un processus simple et efficace
           </motion.h2>
           <motion.p 
             className="max-w-2xl mx-auto text-gray-600"
             variants={itemVariants}
           >
-            En quelques étapes simples, trouvez les professionnels adaptés à votre projet de transition énergétique.
+            Nous vous accompagnons à chaque étape de votre projet de transition énergétique, de la définition de vos besoins à la réalisation des travaux.
           </motion.p>
         </motion.div>
 
         <div className="relative">
-          {/* Ligne de connexion entre les étapes */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-[#007BFF] to-[#40E0D0] transform -translate-y-1/2 z-0" />
-
+          {/* Ligne de connexion */}
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={containerVariants}
-          >
-            {steps.map((step) => (
+            className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 hidden md:block"
+            style={{ marginLeft: "-0.5px" }}
+            initial={{ height: 0 }}
+            whileInView={{ height: "100%" }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+          />
+
+          <div className="space-y-12 relative">
+            {steps.map((step, index) => (
               <motion.div
                 key={step.id}
-                className="bg-white rounded-xl p-8 text-center relative shadow-sm border border-gray-100"
-                variants={cardVariants}
-                whileHover="hover"
+                className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8`}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={containerVariants}
               >
-                {/* Bulle numérotée */}
                 <motion.div 
-                  className="w-12 h-12 rounded-full bg-gradient-to-r from-[#007BFF] to-[#40E0D0] text-white font-bold text-lg flex items-center justify-center absolute -top-6 left-1/2 transform -translate-x-1/2"
-                  initial={{ scale: 0 }}
-                  whileInView={{ scale: 1, rotate: [0, 10, -10, 0] }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.2 + step.id * 0.1 }}
+                  className="md:w-1/2 text-center md:text-left"
+                  variants={itemVariants}
                 >
-                  {step.id}
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    <span className="text-[#007BFF] mr-2">{step.id}.</span> {step.title}
+                  </h3>
+                  <p className="text-gray-600">{step.description}</p>
                 </motion.div>
 
-                <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-[#007BFF]/10 flex items-center justify-center text-[#007BFF]">
-                  {step.icon}
+                <div className="md:w-1/2 flex justify-center relative">
+                  <motion.div 
+                    className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white shadow-lg flex items-center justify-center text-[#007BFF] z-10 border-4 border-white"
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    whileHover={{ 
+                      scale: 1.1, 
+                      boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.4)",
+                      backgroundColor: "#007BFF",
+                      color: "white"
+                    }}
+                  >
+                    {step.icon}
+                  </motion.div>
+                  
+                  {/* Cercles d'arrière-plan */}
+                  <motion.div 
+                    className="absolute w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-dashed border-[#007BFF]/30"
+                    initial={{ scale: 0, opacity: 0, rotate: 0 }}
+                    whileInView={{ scale: 1, opacity: 1, rotate: 45 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    viewport={{ once: true }}
+                  />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         <motion.div 
-          className="mt-16 text-center"
+          className="text-center mt-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
         >
           <motion.button
-            className="px-8 py-4 bg-gradient-to-r from-[#007BFF] to-[#40E0D0] rounded-full text-white font-bold text-lg shadow-lg hover:shadow-xl transform transition"
-            whileHover={{ scale: 1.05, boxShadow: "0px 10px 25px rgba(0, 123, 255, 0.4)" }}
-            whileTap={{ scale: 0.98 }}
+            className="px-8 py-4 bg-gradient-to-r from-[#007BFF] to-[#40E0D0] rounded-full text-white font-bold text-lg shadow-lg"
+            whileHover={{ 
+              scale: 1.05,
+              boxShadow: "0px 10px 25px rgba(0, 123, 255, 0.4)"
+            }}
+            whileTap={{ scale: 0.95 }}
           >
             Démarrer mon projet
           </motion.button>
+          <p className="text-gray-500 mt-4">Plus de 3 200 projets déjà réalisés avec succès</p>
         </motion.div>
       </div>
     </section>

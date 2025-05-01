@@ -42,21 +42,21 @@ export const services: ServiceType[] = [
   {
     id: 1,
     title: "Panneaux photovoltaïques",
-    description: "Production d'électricité durable grâce à l'énergie solaire",
+    description: "Production d'électricité durable grâce à l'énergie solaire. Réduisez vos factures et valorisez votre patrimoine immobilier.",
     icon: "solar",
     image: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
   },
   {
     id: 2,
     title: "Isolation thermique",
-    description: "Isolation par l'extérieur pour une efficacité énergétique maximale",
+    description: "Isolation par l'extérieur pour une efficacité énergétique maximale. Confort optimal été comme hiver et économies garanties.",
     icon: "isolation",
     image: "https://images.unsplash.com/photo-1585704032915-c3400418cfc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
   },
   {
     id: 3,
     title: "Pompes à chaleur",
-    description: "Chauffage écologique et économique pour votre habitation",
+    description: "Chauffage écologique et économique pour votre habitation. Une solution performante qui réduit votre empreinte carbone.",
     icon: "heatpump",
     image: "https://images.unsplash.com/photo-1631282183627-2c52d3062ea0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
   }
@@ -68,21 +68,21 @@ export const testimonials: TestimonialType[] = [
     id: 1,
     name: "Marc Dupont",
     role: "Propriétaire à Nantes",
-    testimonial: "Grâce à cette plateforme, j'ai pu installer des panneaux solaires chez moi. L'économie sur ma facture d'électricité est considérable !",
+    testimonial: "Grâce à cette plateforme, j'ai pu installer des panneaux solaires chez moi. L'économie sur ma facture d'électricité est considérable et le service était impeccable !",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
   },
   {
     id: 2,
     name: "Sophie Martin",
     role: "Gérante d'entreprise à Lyon",
-    testimonial: "J'ai trouvé rapidement un installateur qualifié pour l'isolation de nos locaux. Un service efficace et des professionnels compétents.",
+    testimonial: "J'ai trouvé rapidement un installateur qualifié pour l'isolation de nos locaux. Un service efficace et des professionnels compétents qui ont transformé notre bâtiment.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
   },
   {
     id: 3,
     name: "Thomas Bernard",
     role: "Propriétaire à Marseille",
-    testimonial: "Ma pompe à chaleur fonctionne parfaitement et j'ai réduit ma consommation énergétique de 40%. Je recommande vivement !",
+    testimonial: "Ma pompe à chaleur fonctionne parfaitement et j'ai réduit ma consommation énergétique de 40%. Le professionnel trouvé via la plateforme était expert et à l'écoute !",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
   }
 ];
